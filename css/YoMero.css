@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cinzel&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 120px;
+}
+
+
+
+#Logo{
+    width: 120px;
+    height: 120px;
+    position:absolute;
+    right: 500px;
+    
+
+}
+h1{
+    font-size: 50px;
+    color: #ffff;
+    position: absolute;
+    top: 25px;
+    right: 800px;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+#redes{
+    max-width: 900px;
+    margin: auto;
+    background-color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 1380px;
+
+}
+
+.hori{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hori li a{
+    display: block;
+    padding: 20px 7px 20px 7px;
+    color: #ffff;
+    background-color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+.hori a:hover{
+    color: #CD113B;
+}
+
+.hori li:hover{
+    color: #CD113B;
+}
+
+.vert{
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    background-color: black;
+    text-decoration: none;
+}
+
+.hori li:hover .vert{
+    display: block;
+    color: #CD113B;
+}
+
+.vert li:hover{
+    color: #CD113B;
+}
+
+
+#barra ul{
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+
+}
+
+#barra li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+   
+}
+
+#barra li a{
+    padding: 20px 7px 20px 7px;
+    color: #ffff;
+    background-color: black;
+    text-decoration-line: none;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+#barra li a:hover{
+    
+    color: #CD113B;
+}
+
+section{
+    background-image: url(../imagenes/Leones2.jpg);
+    width: 100%;
+    height: 1025px;
+}
+
+#yo{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Amatic SC', cursive;
+    color: #D0C9C0;
+}
+
+#alan{
+    font-family: 'Amatic SC', cursive;
+    color: #D0C9C0;
+    font-size: 40px;
+    text-align: center;
+}
+
+#izq{
+    width: 30%;
+    height: 100px;
+   
+    position: absolute;
+    top: 700px;
+    left: 40px;
+}
+
+#izq #cruz{
+    color: #D0C9C0;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+#der{
+    width: 30%;
+    height: 100px;
+    position: absolute;
+    top: 700px;
+    left: 1000px;
+    
+}
+
+#der #p2{
+    color: #D0C9C0;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+hr{
+    width: auto;
+    height: 10px;
+    background-color: black;
+    border: 2px double #CD113B;
+}
+
+#tres{
+    width: 100%;
+    height: 450px;
+    background-image: url(../imagenes/luna.jpg);
+    overflow: hidden;
+    
+}
+
+.tarjeta{
+    width: 100%;
+    height: 350px;
+    max-width: 1200px;
+    display: inline-block;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Cinzel', serif;
+    position: relative;
+    color: #ffff;
+}
+
+.tarjeta .tar{
+    width: 330px;
+    height: 420px;
+    border-radius: 10%;
+    box-shadow: 0 2px 2px #CD113B;
+    overflow: hidden;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.25s;
+    
+   
+}
+.tar{
+    position: relative;
+    top: 5px;
+    left: 300px;
+    
+
+}
+
+.tarjeta .tar2{
+    width: 330px;
+    height: 420px;
+    border-radius: 10%;
+    box-shadow: 0 2px 2px #CD113B;
+    overflow: hidden;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.25s;
+    position: absolute;
+    bottom: 350px;
+    left: 900px;
+}
+
+.tarjeta .tar:hover{
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px #CD113B;
+
+
+}
+
+.tarjeta .tar2:hover{
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px #CD113B;
+
+
+}
+
+.tarjeta .tar img{
+    width: 100%;
+    height: 220px;
+}
+
+.tarjeta .tar h3{
+    font-weight: 600;
+}
+
+.tarjeta .tar p{
+    padding: 0 14px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+.tarjeta .tar2 img{
+    width: 330px;
+    height: 220px;
+}
+
+.tarjeta .tar2 h3{
+    font-weight: 600;
+}
+
+.tarjeta .tar2 p{
+    padding: 0 14px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    font-size: 12px;
+    color: #ffff;
+    font-family: 'Amatic SC', cursive;
+    overflow: hidden;
+   
+
+}
+
+footer ul{
+    position: absolute;
+    top: 1650px;
+    left: 695px;
+    
+}
+
+#num{
+    font-family: 'Amatic SC', cursive;
+    color: #ffff;
+    font-size: 20px;
+    position: absolute;
+    top: 1610px;
+    left: 700px;
+}
+
+#derecho{
+
+    position: absolute;
+    top: 1630px;
+    left: 680px;
+
+}
+
+.iconos{
+    
+    position: absolute;
+    
+    right: 2200px;
+    
+}
+
+.iconos ul{
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    text-align: left;
+    
+    
+}
+
+.iconos ul li{
+   
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px 0 0;
+       
+    
+
+}
+
+.iconos ul img{
+    display: inline;
+
+   
+   
+}
+

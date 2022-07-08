@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: blue;
+}
+
+
+
+
+
+
+
+.gira{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    
+}
+
+.gira .cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.gira .frente{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+
+}
+
+.gira .frente img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gira .frente h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
+    line-height: 45px;
+    color: #fff;
+    background: black;
+    text-align: center;
+
+}
+
+.gira .atras{
+    transform: perspective(600px) rotateY(180deg);
+    background: black;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+
+
+}
+
+.gira .atras h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.gira .atras p{
+    letter-spacing: 1px;
+    
+}
+
+.gira:hover .frente{
+    transform: perspective(600px) rotateY(180deg);
+
+}
+
+.gira:hover .atras{
+    transform: perspective(600px) rotateY(360deg);
+
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+}
